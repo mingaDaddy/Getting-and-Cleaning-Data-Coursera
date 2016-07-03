@@ -89,6 +89,7 @@ data <- subset(data, select = c(2:3,colsKeep))
 ############## 5: From the data set in step 4, creates a second, independent tidy data set with the average of 
 ############## each variable for each activity and each subject
 dataAggregated <- aggregate(data[,3:ncol(data)], by=list(data$activityName,data$subject), FUN=mean)
+colnames(dataAggregated)[1:2] <- c("activity", "subject")
 
 ## Create final tidy data
 write.csv(data, "data.csv", row.names = F)
