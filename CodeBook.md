@@ -175,3 +175,11 @@ dataAggregated <- aggregate(data[,3:ncol(data)], by=list(data$activityName,data$
 write.csv(data, "data.csv", row.names = F)
 write.csv(dataAggregated, "dataAggregated.csv", row.names = F)
 ```
+
+## Source of data
+
+The UCI Machine Learning Repository:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+The source data for this project can be found here.
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
