@@ -7,6 +7,7 @@ This repository contains **5** files:
 - **run_analysis.R**, which includes the R Script for getting the tidy data
 - **data.csv**, which contains train and test observations (only mean and standard deviation variables)
 - **dataAggregated.csv**, which contains aggregated data (by activity and subject, using mean as aggregation function)
+- **dataAggregated.txt**, which contains aggregated data in tab delimited format, as uploaded to Coursera (by activity and subject, using mean as aggregation function)
 
 ## Replicating tidy data:
 To replicate tidy data (to obtain data.csv and dataAggregated.csv) just download run_analysist.R and execute it in your own R instance. The scripts will create all necessary folders, download the raw data files (if needed), unzip them and create the comma separated files.
